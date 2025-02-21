@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 def anfrage(prompt):
     load_dotenv()
-    os.environ["GEMINI_API_KEY"] = os.getenv("API_KEY")
+    os.environ["GEMINI_API_KEY"] = st.secrets["api_key"]
     
     messages = [
         {
